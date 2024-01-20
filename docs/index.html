@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Exercise List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #3498db;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #444;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #3498db;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        blockquote {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #555;
+            border-radius: 6px;
+        }
+
+        code {
+            background-color: #555;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CTF Exercise List</h1>
+<p>Made by Rafał Włodarczyk. Should you have any questions, message me at <a href="mailto:rvrelay@gmail.com">rvrelay@gmail.com</a></p>
+<ul>
+    <li>
+        <h3 id="mod-ari">mod-ari</h3>
+        <p>For reasons unbeknown to humankind, our target decided to encode a flag using pairs of integers.
+            We managed to obtain some of them.
+            Can you find the flag?</p>
+        <p><code>a_i = [1890, 923943128, 9700140639, 30034828954, 81893600223, 7453544462]</code></p>
+        <p><code>m_i = [2137, 1000000007, 10000000019, 100000000003, 100000000019, 100000000057]</code></p>
+        <blockquote>
+            <code>FLAG{?????_???_?????}</code>
+        </blockquote>
+    </li>
+    <li>
+        <h3 id="object-dec">object-dec</h3>
+        <p>We managed to intercept what we reckon is a poorly encrypted <code>json</code>
+            containing <code>caesar</code> hacker group member target credentials.
+            Come on, pwn, there is a flag in there.</p>
+        <p><code>rlW1p2IlozSgMFV6VaOupTS5LGVkZmpvYPNvpTSmp3qipzDvBvNvExkOE3gdpmOhK2ymK3OlMJEcL3EuLzkysFW9</code></p>
+        <blockquote>
+            <code>FLAG{????_??_???????????}</code>
+        </blockquote>
+    </li>
+    <li>
+        <h3 id="xor-img">xor-img</h3>
+        <p>Our target decided to <code>XOR-encrypt</code>
+            both of these images using a single cipher.
+            Find a way to retrieve the flag.</p>
+        <blockquote>
+            <code>FLAG{?????????}</code>
+        </blockquote>
+        <div>
+            <img src="./enc1.png" alt="Image 1">
+            <img src="./enc2.png" alt="Image 2">
+        </div>
+    </li>
+</ul>
+
+</body>
+</html>
