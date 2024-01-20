@@ -70,16 +70,25 @@
             border-radius: 8px;
             margin-top: 10px;
         }
+
+        .long_code {
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;
+        }
     </style>
 </head>
 <body>
 
 <h1>CTF Exercise List</h1>
-<p>Made by Rafał Włodarczyk. Should you have any questions, message me at <a href="mailto:rvrelay@gmail.com">rvrelay@gmail.com</a></p>
+<p>Made by Rafał Włodarczyk. Should you have any questions, message me at <a href="mailto:rvrelay@gmail.com">rvrelay@gmail.com</a>
+</p>
 <ul>
     <li>
         <h3 id="mod-ari">mod-ari</h3>
-        <p>For reasons unbeknown to humankind, our chinese tourist target decided to encode a flag using pairs of integers.
+        <p>For reasons unbeknown to humankind, our chinese tourist target decided to encode a flag using pairs of
+            integers.
             We managed to obtain some of them.
             Can you find the flag?</p>
         <p><code>a_i = [1890, 923943128, 9700140639, 30034828954, 81893600223, 7453544462]</code></p>
@@ -93,7 +102,8 @@
         <p>We managed to intercept what we reckon is a poorly encrypted <code>json</code>
             containing <code>caesar</code> hacker group member target credentials.
             Come on, pwn, there is a flag in there.</p>
-        <p><code>rlW1p2IlozSgMFV6VaOupTS5LGVkZmpvYPNvpTSmp3qipzDvBvNvExkOE3gdpmOhK2ymK3OlMJEcL3EuLzkysFW9</code></p>
+        <p><code class="long_code">rlW1p2IlozSgMFV6VaOupTS5LGVkZmpvYPNvpTSmp3qipzDvBvNvExkOE3gdpmOhK2ymK3OlMJEcL3EuLzkysFW9</code>
+        </p>
         <blockquote>
             <code>FLAG{????_??_???????????}</code>
         </blockquote>
